@@ -1,22 +1,41 @@
-#include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+#include<stdio.h>
+int main(){
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    char pais[10] , estado[10];
+    float populacao , area , PIB;
+    int cidade , turismo;
 
+    printf("Qual o nome do pais ?\n");
+    scanf("%s", &pais);
+
+ // Cada estado esta identificado por letras de A-H
+    printf("Qual o estado ?\n");
+    scanf("%s", &estado);
+
+// Cada cidade esta dentificada pelos numeros de 1-4
+    printf("Qual a cidade ?\n");
+    scanf("%d", &cidade);
+    printf("Qual a populacao ?\n");
+    scanf("%f", &populacao);
+    printf("Qual a area ?\n");
+    scanf("%f", &area);
+    printf("Qual o PIB ?\n");
+    scanf("%f", &PIB);
+    printf("Tem quantos pontos turisticos ?\n");
+    scanf("%d", &turismo);
+
+    printf("\n");
+    printf("Descricoes da carta: \n");
+    printf("\n");
+
+    printf("Pais - %s\n", pais);
+    printf("Estado - %s\n", estado);
+    printf("Cidade - %d\n", cidade);
+    printf("Codigo da carta - %s%d\n", estado,cidade);
+    printf("Populacao - %.2f\n", populacao);
+    printf("Area - %.2f\n", area);
+    printf("PIB - %.2f\n", PIB);
+    printf("Pontos turisticos - %d\n", turismo);
+    
     return 0;
 }
